@@ -1,0 +1,46 @@
+table {
+  background-image: url('http://i.imgur.com/tckmock.jpg');
+  height: 200px;
+  width: 100%;
+  color: white;
+  background-size: cover;
+  border: 5px solid black;
+}
+.title {
+  font-family: verdana;
+  width: 60% }
+td {
+  font-family: verdana;
+  width: 10%;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited { color: white; }
+a:hover { color: black; }
+.main-page:link {
+  color: black;
+  text-decoration: none;
+}
+.main-page:visited {
+  color: black;
+}
+.main-page:hover {
+  color: white;
+}
+body {
+  background-color: #B26B00;
+}
+.form {
+  width: 50%;
+  background-image: none;
+  background-color: #B26B00;
+}
+.field-name {
+  width: 30%;
+}
+.input-field {
+  width: 70%;
+}

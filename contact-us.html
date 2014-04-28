@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <script type=text/javascript>
+    function hgsubmit() {
+      $.ajax({
+      type: “POST”,
+      url: “https://mandrillapp.com/api/1.0/messages/send.json”,
+      data: {
+        ‘key’: ‘0_ucNb6mRKcKlM_HctQ8KA’,
+        ‘message’: {
+          ‘from_email’: 'thereaper666@gmail.com',
+          ‘to’: [
+              {
+                ‘email’: ‘thereaper666@gmail.com’,
+                ‘type’: ‘to’
+              }
+            ],
+          ‘autotext’: ‘true’,
+          ‘subject’: ‘New message’,
+          ‘html’: comment
+        }
+      }
+     }).done(function(response) {
+       console.log(response); // if you're into that sorta thing
+     });
+   }</script>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<table>
+      <tr>
+        <td class = "title">
+            <h1>Cakolli Power Washing</h1>
+            <h3>Call Today!<br>(215)285-7422</h3>
+        </td>
+        <td><center><a href = "./index.html"><h3>Home</h3></a></center></td>
+        <td><center><a href = "./about-us.html"><h3>About Us<h3></a></center></td>
+        <td><center><a href = "./contact-us.html"><h3>Contact Us</h3></a></center></td>
+        <td><center><a href = "./pictures.html"><h3>Pictures</h3></a></center></td>
+      </tr>
+    </table>
+    <h2>Use The Form Below to Send Us Your Comments Or Request a Quote!</h2>
+</head>
+<body>
+<form action="http://www.mydomain.com/cgi-sys/formmail.pl" method="post" name="hgmailer">
+<input type="hidden" name="recipient" value="thereaper666@gmail.com">
+<input type="hidden" name="subject" value="FormMail E-Mail">
+<table class="form">
+  <tr>
+    <td class="field-name">Visitor Name: </td>
+    <td class="input-field"> <input type="text" name="name" size="30"</td>
+  </tr>
+  <tr>
+    <td class="field-name">Visitor E-mail:</td>
+    <td class="input-field"><input type="text" name="email" size="30"></td>
+  </tr>
+  <tr>
+    <td class="field-name">Email Content:</td>
+    <td class="input-field"><textarea name="comment" cols="50" rows="5"></textarea></td>
+  <tr>
+    <td><input type="button" value="E-Mail Me!" onclick="hgsubmit();"></td>
+  </tr>
+</table>
+</form>
+	</body>
+</html>
