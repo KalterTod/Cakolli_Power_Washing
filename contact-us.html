@@ -41,12 +41,18 @@
     </form>
     <script language="JavaScript">
 function submit_email(){
+  //New XHR request
   var xhr = new XMLHttpRequest();
   var content, name, email;
-  name=document.getElementById("person_name");
-  content=document.getElementById("comment");
-  email=document.getElementById("email");
 
+  //Get values from email form
+  name=document.getElementById("person_name").value;
+  content=document.getElementById("comment").value;
+  email=document.getElementById("email").value;
+  console.log(content);
+  console.log(email);
+  console.log(name);
+  //Post to Mandrill App /messages/send.json API
   xhr.open("POST", "https://mandrillapp.com/api/1.0/messages/send.json", true);
   xhr.setRequestHeader("Content-Type","application/json; charset=UTF-8");
 
@@ -55,13 +61,13 @@ function submit_email(){
     {
     "key": "QNl-KWAaxMNqr3APX7bPOw",
     "message": {
-      "text":content,
+      "text":content, //Taken from form
       "subject": "New Message",
-      "from_email": email,
-      "from_name": name,
+      "from_email": email, //Taken from form
+      "from_name": name, //Taken from form
       "to": [
           {
-              "email": "thereaper666@gmail.com",
+              "email": "thereaper666@gmail.com", //Recipient Email Address
               "name": "Cakolli Power Washing",
               "type": "to"
             }
