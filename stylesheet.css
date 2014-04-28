@@ -8,10 +8,22 @@ table {
 }
 .title {
   font-family: verdana;
-  width: 60% }
-td {
+  width: 62% }
+.index {
   font-family: verdana;
-  width: 10%;
+  width: 6%;
+}
+.about {
+  font-family: verdana;
+  width: 9%;
+}
+.contact {
+  font-family: verdana;
+  width: 9%;
+}
+.pictures {
+  font-family: verdana;
+  width: 9%;
 }
 
 a:link {
