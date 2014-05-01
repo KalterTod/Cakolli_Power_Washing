@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
-	  <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 		<title>Result</title>
 	</head>
 	<body>
-		<table>
-      <tr>
-        <td class = "title">
-            <h1>Cakolli Power Washing</h1>
-            <h3>Call Today!<br>(215)285-7422</h3>
-        </td>
-        <td class="index"><center><a href = "./index.html"><h3>Home</h3></a></center></td>
-        <td class="about"><center><a href = "./about-us.html"><h3>About Us<h3></a></center></td>
-        <td class="contact"><center><a href = "./contact-us.html"><h3>Contact Us</h3></a></center></td>
-        <td class="pictures"><center><a href = "./pictures.html"><h3>Pictures</h3></a></center></td>
-      </tr>
-    </table>
-    <h2>Use The Form Below to Send Us Your Comments Or Request a Quote!</h2>
-    <form>
-      <table class="form">
-        <tr>
-          <td class="field-name">Visitor Name: </td>
-          <td class="input-field"> <input type="text" name="person_name" size="30" id="person_name"></td>
-        </tr>
-        <tr>
-          <td class="field-name">Visitor E-mail:</td>
-          <td class="input-field"><input type="text" name="email" size="30" id="email"></td>
-        </tr>
-        <tr>
-          <td class="field-name">Email Content:</td>
-          <td class="input-field"><textarea name="comment" cols="50" rows="5" id="comment"></textarea></td>
-        <tr>
-          <td>
+		<div id="top">
+		<img class="logo" src="./images/logo.png"></img>
+		<div id="navcontainer">
+			<ul id="navlist">
+				<li><a href = "./index.html">Home</a></li>
+				<li><a href = "./about-us.html">About Us</a></li>
+				<li><a href = "./pictures.html">Pictures</a></li>
+				<li><a href = "./contact-us.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
 
-            <input type="button" value="E-Mail Me!" onclick="submit_email();"></td>
-        </tr>
-      </table>
-    </form>
+				<h2>Use The Form Below to Send Us Your Comments Or Request a Quote!</h2>
+				<form>
+					<table class="form">
+						<tr>
+							<td class="field-name">Visitor Name: </td>
+							<td class="input-field"> <input type="text" name="person_name" size="30" id="person_name"></td>
+						</tr>
+						<tr>
+							<td class="field-name">Visitor E-mail:</td>
+							<td class="input-field"><input type="text" name="email" size="30" id="email"></td>
+						</tr>
+						<tr>
+							<td class="field-name">Email Content:</td>
+							<td class="input-field"><textarea name="comment" cols="50" rows="5" id="comment"></textarea></td>
+						<tr>
+							<td>
+
+								<input type="button" value="E-Mail Me!" onclick="submit_email();"></td>
+						</tr>
+					</table>
+				</form>
+</div>
+<a href="./index.html"><h3>Cakolli Power Washing Service&reg;</h3></a>
     <script language="JavaScript">
 function submit_email(){
   //New XHR request
